@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.Lab01-Ex01", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.Lab01-Ex02", "ITMO.CSCourse.Lab01-Ex02\ITMO.CSCourse.Lab01-Ex02.csproj", "{674DDA63-9F31-485C-A0F8-60CFB22C6293}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.Lab01-Ex04.MdiApplication", "ITMO.CSCourse.Lab01-Ex04.MdiApplication\ITMO.CSCourse.Lab01-Ex04.MdiApplication.csproj", "{A52F30DF-43B0-4733-871F-DF6F409B5F50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{674DDA63-9F31-485C-A0F8-60CFB22C6293}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{674DDA63-9F31-485C-A0F8-60CFB22C6293}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{674DDA63-9F31-485C-A0F8-60CFB22C6293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A52F30DF-43B0-4733-871F-DF6F409B5F50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A52F30DF-43B0-4733-871F-DF6F409B5F50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A52F30DF-43B0-4733-871F-DF6F409B5F50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A52F30DF-43B0-4733-871F-DF6F409B5F50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
