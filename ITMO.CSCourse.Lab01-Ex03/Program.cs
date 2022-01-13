@@ -1,14 +1,10 @@
-﻿/*
-В проекте Lab01-Ex02 содержится код упражнений 02 и 03.
- */
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITMO.CSCourse.Lab01_Ex02
+namespace ITMO.CSCourse.Lab01_Ex03
 {
 	static class Program
 	{
@@ -20,8 +16,7 @@ namespace ITMO.CSCourse.Lab01_Ex02
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			// Application.Run(new Form1()); - старая форма
-			Application.Run(new nForm()); // новая форма
+			Application.Run(new Form1());
 		}
 	}
 }
