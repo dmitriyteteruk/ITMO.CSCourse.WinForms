@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.Lab01-Ex01", "ITMO.CSCourse.Lab01-Ex01\ITMO.CSCourse.Lab01-Ex01.csproj", "{5E372B80-B41B-4E42-A778-7268D0AEA167}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.Lab01-Ex02", "ITMO.CSCourse.Lab01-Ex02\ITMO.CSCourse.Lab01-Ex02.csproj", "{674DDA63-9F31-485C-A0F8-60CFB22C6293}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5E372B80-B41B-4E42-A778-7268D0AEA167}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E372B80-B41B-4E42-A778-7268D0AEA167}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E372B80-B41B-4E42-A778-7268D0AEA167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{674DDA63-9F31-485C-A0F8-60CFB22C6293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{674DDA63-9F31-485C-A0F8-60CFB22C6293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{674DDA63-9F31-485C-A0F8-60CFB22C6293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{674DDA63-9F31-485C-A0F8-60CFB22C6293}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
