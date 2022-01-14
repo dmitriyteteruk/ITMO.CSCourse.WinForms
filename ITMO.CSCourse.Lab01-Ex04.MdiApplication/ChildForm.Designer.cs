@@ -60,6 +60,7 @@ namespace ITMO.CSCourse.Lab01_Ex04.MdiApplication
 			this.FormatMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToggleMenuItem});
 			this.FormatMenuItem.MergeAction = System.Windows.Forms.MergeAction.Insert;
+			this.FormatMenuItem.MergeIndex = 1;
 			this.FormatMenuItem.Name = "FormatMenuItem";
 			this.FormatMenuItem.Size = new System.Drawing.Size(57, 20);
 			this.FormatMenuItem.Text = "&Format";
