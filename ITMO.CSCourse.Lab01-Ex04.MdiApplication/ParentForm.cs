@@ -1,5 +1,5 @@
-﻿// в этом коде есть Lab01-04 и Lab02-03.
-// код Lab02-03 дополнительно прокоментирован
+﻿// в этом коде есть Lab01-04, Lab02-03 и Lab02-04.
+// код Lab02-03 и Lab02-03 дополнительно прокоментирован.
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +17,10 @@ namespace ITMO.CSCourse.Lab01_Ex04.MdiApplication
 		public ParentForm()
 		{
 			InitializeComponent();
+
+			// код Lab02-04.
+			// Свойству Text панели spData устанавливается текущая дата
+			spData.Text = Convert.ToString(System.DateTime.Today.ToLongDateString());
 		}
 
 		private void exitMenuItem_Click(object sender, EventArgs e)
@@ -27,11 +31,19 @@ namespace ITMO.CSCourse.Lab01_Ex04.MdiApplication
 		private void WindowCascadeMenuItem_Click(object sender, EventArgs e)
 		{
 			this.LayoutMdi(System.Windows.Forms.MdiLayout.Cascade);
+
+			// код Lab02-04.
+			// нижеследующий код необходим для вывода статуса отображения окон Cascade
+			spWin.Text = "Windows is cascade";
 		}
 
 		private void WindowTileMenuItem_Click(object sender, EventArgs e)
 		{
 			this.LayoutMdi(System.Windows.Forms.MdiLayout.TileHorizontal);
+
+			// код Lab02-04.
+			// нижеследующий код необходим для вывода статуса отображения окон Tile Horizontal
+			spWin.Text = "Windows is horizontal";
 		}
 
 		private void NewMenuItem_Click(object sender, EventArgs e)
