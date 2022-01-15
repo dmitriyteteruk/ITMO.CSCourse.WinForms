@@ -36,9 +36,10 @@ namespace ITMO.CSCourse.Lab02_Ex01
 			// 
 			// btnyes
 			// 
-			this.btnyes.Location = new System.Drawing.Point(59, 67);
+			this.btnyes.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.btnyes.Location = new System.Drawing.Point(128, 232);
 			this.btnyes.Name = "btnyes";
-			this.btnyes.Size = new System.Drawing.Size(75, 23);
+			this.btnyes.Size = new System.Drawing.Size(134, 56);
 			this.btnyes.TabIndex = 0;
 			this.btnyes.Text = "Да";
 			this.btnyes.UseVisualStyleBackColor = true;
@@ -46,20 +47,23 @@ namespace ITMO.CSCourse.Lab02_Ex01
 			// 
 			// btnno
 			// 
-			this.btnno.Location = new System.Drawing.Point(196, 67);
+			this.btnno.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.btnno.Location = new System.Drawing.Point(539, 232);
 			this.btnno.Name = "btnno";
-			this.btnno.Size = new System.Drawing.Size(75, 23);
+			this.btnno.Size = new System.Drawing.Size(134, 56);
 			this.btnno.TabIndex = 1;
 			this.btnno.Text = "Нет";
 			this.btnno.UseVisualStyleBackColor = true;
+			this.btnno.Click += new System.EventHandler(this.btnno_Click);
 			this.btnno.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnno_MouseMove);
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(80, 13);
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label1.Location = new System.Drawing.Point(202, 33);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(170, 13);
+			this.label1.Size = new System.Drawing.Size(414, 31);
 			this.label1.TabIndex = 2;
 			this.label1.Text = "Вы довольны своей зарплатой?";
 			// 
@@ -67,7 +71,7 @@ namespace ITMO.CSCourse.Lab02_Ex01
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(330, 157);
+			this.ClientSize = new System.Drawing.Size(817, 479);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnno);
 			this.Controls.Add(this.btnyes);

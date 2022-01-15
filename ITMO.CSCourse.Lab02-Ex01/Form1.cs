@@ -28,8 +28,13 @@ namespace ITMO.CSCourse.Lab02_Ex01
 			btnno.Left += e.X;
 			if (btnno.Top < -10 || btnno.Top > 100)
 				btnno.Top = 60;
-			if (btnno.Left < -80 || btnno.Left > 250)
+			if (btnno.Left < -100 || btnno.Left > 250)
 				btnno.Left = 120;
+		}
+
+		private void btnno_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
