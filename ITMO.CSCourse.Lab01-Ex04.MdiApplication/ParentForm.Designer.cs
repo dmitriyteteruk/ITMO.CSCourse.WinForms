@@ -86,14 +86,14 @@ namespace ITMO.CSCourse.Lab01_Ex04.MdiApplication
 			// WindowCascadeMenuItem
 			// 
 			this.WindowCascadeMenuItem.Name = "WindowCascadeMenuItem";
-			this.WindowCascadeMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.WindowCascadeMenuItem.Size = new System.Drawing.Size(118, 22);
 			this.WindowCascadeMenuItem.Text = "&Cascade";
 			this.WindowCascadeMenuItem.Click += new System.EventHandler(this.WindowCascadeMenuItem_Click);
 			// 
 			// WindowTileMenuItem
 			// 
 			this.WindowTileMenuItem.Name = "WindowTileMenuItem";
-			this.WindowTileMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.WindowTileMenuItem.Size = new System.Drawing.Size(118, 22);
 			this.WindowTileMenuItem.Text = "&Tile";
 			this.WindowTileMenuItem.Click += new System.EventHandler(this.WindowTileMenuItem_Click);
 			// 
@@ -107,6 +107,7 @@ namespace ITMO.CSCourse.Lab01_Ex04.MdiApplication
 			this.MainMenuStrip = this.MdiMenu;
 			this.Name = "ParentForm";
 			this.Text = "Parent Form";
+			this.Load += new System.EventHandler(this.ParentForm_Load);
 			this.MdiMenu.ResumeLayout(false);
 			this.MdiMenu.PerformLayout();
 			this.ResumeLayout(false);

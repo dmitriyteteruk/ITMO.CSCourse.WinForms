@@ -41,5 +41,10 @@ namespace ITMO.CSCourse.Lab01_Ex04.MdiApplication
 		}
 
 		private int openDocuments = 0;
+
+		private void ParentForm_Load(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
