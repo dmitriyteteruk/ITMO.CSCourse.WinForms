@@ -42,8 +42,10 @@ namespace ITMO.CSCourse.Lab02_Ex02.TestList
 			// 
 			this.peopleList.FormattingEnabled = true;
 			this.peopleList.Items.AddRange(new object[] {
-            "Иваново Иван Иванович",
-            "Петров Петр Петрович"});
+            "Иванов Иван Иванович",
+            "Петров Петр Петрович",
+            "Сидоров Сидор Сидорович",
+            "Тетерук Дмитрий Владимирвич"});
 			this.peopleList.Location = new System.Drawing.Point(12, 224);
 			this.peopleList.Name = "peopleList";
 			this.peopleList.Size = new System.Drawing.Size(270, 21);
