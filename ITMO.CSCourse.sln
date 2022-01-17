@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.Lab02-Ex02.Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.Lab02-Ex05.WinContainer", "ITMO.CSCourse.Lab02-Ex05.WinContainer\ITMO.CSCourse.Lab02-Ex05.WinContainer.csproj", "{0F2E5616-706F-46A4-950F-DCB277573AD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSharpCourse.Lab02-Ex06.BiblWorm", "ITMO.CSharpCourse.Lab02-Ex06.BiblWorm\ITMO.CSharpCourse.Lab02-Ex06.BiblWorm.csproj", "{B5CF3D12-17DB-4F23-B159-DEFC73973004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSharpCourse.Lab02-Ex07.RegistrationForm", "ITMO.CSharpCourse.Lab02-Ex07.RegistrationForm\ITMO.CSharpCourse.Lab02-Ex07.RegistrationForm.csproj", "{E8CFD9BA-3BC4-4479-9944-9384A5D56E13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{0F2E5616-706F-46A4-950F-DCB277573AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F2E5616-706F-46A4-950F-DCB277573AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F2E5616-706F-46A4-950F-DCB277573AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5CF3D12-17DB-4F23-B159-DEFC73973004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5CF3D12-17DB-4F23-B159-DEFC73973004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5CF3D12-17DB-4F23-B159-DEFC73973004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5CF3D12-17DB-4F23-B159-DEFC73973004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8CFD9BA-3BC4-4479-9944-9384A5D56E13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8CFD9BA-3BC4-4479-9944-9384A5D56E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8CFD9BA-3BC4-4479-9944-9384A5D56E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8CFD9BA-3BC4-4479-9944-9384A5D56E13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
