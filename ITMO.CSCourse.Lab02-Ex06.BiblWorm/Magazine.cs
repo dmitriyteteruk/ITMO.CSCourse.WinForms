@@ -10,10 +10,10 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 {
     class Magazine : Item, IPubs
     {
-        private String volume;    // том
-        private int number;        // номер
-        private String title;       // название
-        private int year;      // дата выпуска
+        public String volume;    // том
+        public int number;        // номер
+        public String title;       // название
+        public int year;      // дата выпуска
 
         public bool IfSubs { get; set; } // подписка на журнал
 

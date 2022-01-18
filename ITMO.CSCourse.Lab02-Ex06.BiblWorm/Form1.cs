@@ -21,8 +21,10 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 
 		private void label7_Click(object sender, EventArgs e)
 		{
-
+		
 		}
+		
+		
 		public string Author // автор
 		{
 			get { return textBox1.Text; }
@@ -74,6 +76,29 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 			set { numericUpDown4.Value = value; }
 		}
 
+		// добавляем Properties для Magazine
+
+		public string title // Название
+		{
+			get { return textBoxTitle.Text; }
+			set { textBoxTitle.Text = value; }
+		}
+		public string volume // Том
+		{
+			get { return textBoxVolume.Text; }
+			set { textBoxVolume.Text = value; }
+		}
+		public int number // Номер
+		{
+			get { return (int)numericUpDownNumber.Value; }
+			set { numericUpDownNumber.Value = value; }
+		}
+		public int year // Номер
+		{
+			get { return (int)numericUpDownYear.Value; }
+			set { numericUpDownYear.Value = value; }
+		}
+
 		List<Item> its = new List<Item>();
 
 		private void button1_Click(object sender, EventArgs e)
@@ -91,7 +116,8 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 			Existence = ReturnTime = false;
 		}
 
-		private void button2_Click(object sender, EventArgs e)
+
+		private void button1_Click_1(object sender, EventArgs e)
 		{
 			// В обработчике сначала проверьте состояние флажка сортировки и в случае его установки отсортируйте список
 			if (SortInvNumber) its.Sort();
@@ -106,6 +132,26 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 
 			// После построения строки выведете ее в элемент richTextBox1:
 			richTextBox1.Text = sb.ToString();
+		}
+
+		private void buttonAddMagazine_Click(object sender, EventArgs e)
+		{
+			Magazine b = new Magazine(title, year, volume, number, InvNumber, Existence);
+			//if (ReturnTime) b.Return(); // Далее в этом обработчике реализуйте проверку возврата книги в срок
+			//b.PriceBook(PeriodUse);         // И расчет стоимости с учетом срока пользования книгой:
+			its.Add(b);                     // Теперь добавьте книгу в список
+			/// В конце обработчика очистите поля ввода для новой информации 
+			/// (будьте внимательны, укажите значения, входящие в допустимый 
+			/// диапазон, который вы настраивали ранее):
+			title = volume = "";
+			InvNumber = number = 0;
+			year = 2000;
+			Existence = ReturnTime = false;
+		}
+
+		private void labelNumber_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
