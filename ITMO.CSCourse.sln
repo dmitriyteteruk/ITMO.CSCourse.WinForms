@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSharpCourse.Lab02-Ex0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.Lab02-Ex06.BiblWorm", "ITMO.CSCourse.Lab02-Ex06.BiblWorm\ITMO.CSCourse.Lab02-Ex06.BiblWorm.csproj", "{1B0779CD-826D-434C-B109-802C00BB858D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMTO.CSCourse.Lab03-Ex01.WinTimer1", "IMTO.CSCourse.Lab03-Ex01.WinTimer1\IMTO.CSCourse.Lab03-Ex01.WinTimer1.csproj", "{4FF3ACBD-8176-48AD-8AB7-EE296514106B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.Lab03-Ex01.15.ControlLibrary", "ITMO.CSCourse.Lab03-Ex01.15.ControlLibrary\ITMO.CSCourse.Lab03-Ex01.15.ControlLibrary.csproj", "{9B7F271D-2072-466A-8200-954EF9D001F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{1B0779CD-826D-434C-B109-802C00BB858D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B0779CD-826D-434C-B109-802C00BB858D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B0779CD-826D-434C-B109-802C00BB858D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FF3ACBD-8176-48AD-8AB7-EE296514106B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FF3ACBD-8176-48AD-8AB7-EE296514106B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FF3ACBD-8176-48AD-8AB7-EE296514106B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FF3ACBD-8176-48AD-8AB7-EE296514106B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B7F271D-2072-466A-8200-954EF9D001F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B7F271D-2072-466A-8200-954EF9D001F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B7F271D-2072-466A-8200-954EF9D001F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B7F271D-2072-466A-8200-954EF9D001F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
