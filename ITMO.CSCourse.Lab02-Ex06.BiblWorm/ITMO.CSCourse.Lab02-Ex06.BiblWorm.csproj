@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B5CF3D12-17DB-4F23-B159-DEFC73973004}</ProjectGuid>
+    <ProjectGuid>{1B0779CD-826D-434C-B109-802C00BB858D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ITMO.CSharpCourse.Lab02_Ex06.BiblWorm</RootNamespace>
-    <AssemblyName>ITMO.CSharpCourse.Lab02-Ex06.BiblWorm</AssemblyName>
+    <RootNamespace>ITMO.CSCourse.Lab02_Ex06.BiblWorm</RootNamespace>
+    <AssemblyName>ITMO.CSCourse.Lab02-Ex06.BiblWorm</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

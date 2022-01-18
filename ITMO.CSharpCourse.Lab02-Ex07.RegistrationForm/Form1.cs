@@ -1,4 +1,6 @@
-﻿using System;
+﻿// даннный 
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,6 +37,7 @@ namespace ITMO.CSharpCourse.Lab02_Ex07.RegistrationForm
 				txt.TabIndex = 1;
 				txt.Text = "";
 				groupBox1.Controls.Add(txt);
+				txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
 			}
 			else
 			{
@@ -46,9 +49,65 @@ namespace ITMO.CSharpCourse.Lab02_Ex07.RegistrationForm
 					lcv -= 1;
 				}
 			}
+
 		}
 
 		private void textBox2_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (char.IsDigit(e.KeyChar))
+			{
+				e.Handled = true;
+				MessageBox.Show("Поле Name не может содержать цифры");
+				errorProvider1.SetError(textBox1, "Must be letter");   // код Lab02-Ex08 пункт 12
+			}
+		}
+
+		private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (!char.IsDigit(e.KeyChar))
+			{
+				e.Handled = true;
+				MessageBox.Show("Поле PIN не может содержать буквы");
+			}
+		}
+
+		private void checkBox1_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			
+		}
+
+		private void textBox2_Validating(object sender, CancelEventArgs e)
+		{
+			if (textBox2.Text == "")
+			{
+				e.Cancel = false;
+			}
+			else
+			{
+				try
+				{
+					double.Parse(textBox2.Text);
+					e.Cancel = false;
+				}
+				catch
+				{
+					e.Cancel = true;
+					MessageBox.Show("Поле PIN не может содержать буквы");
+				}
+			}
+		}
+
+		private void groupBox1_Enter(object sender, EventArgs e)
+		{
+
+		}
+
+		private void textBox2_TextChanged_1(object sender, EventArgs e)
 		{
 
 		}

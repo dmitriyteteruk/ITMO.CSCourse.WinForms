@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITMO.CSharpCourse.Lab02_Ex06.BiblWorm
+namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 {
 	static class Program
 	{

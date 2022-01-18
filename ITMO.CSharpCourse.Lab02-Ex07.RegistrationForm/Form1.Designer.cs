@@ -29,15 +29,18 @@ namespace ITMO.CSharpCourse.Lab02_Ex07.RegistrationForm
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.label3 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
 			this.checkBox1 = new System.Windows.Forms.CheckBox();
 			this.button1 = new System.Windows.Forms.Button();
+			this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
 			this.groupBox1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// groupBox1
@@ -52,24 +55,25 @@ namespace ITMO.CSharpCourse.Lab02_Ex07.RegistrationForm
 			this.groupBox1.TabIndex = 0;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Введите регистрационные данные";
+			this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
 			// 
-			// label1
+			// textBox2
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(13, 13);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(144, 13);
-			this.label1.TabIndex = 1;
-			this.label1.Text = "Выбирите тип регистрации";
+			this.textBox2.Location = new System.Drawing.Point(82, 60);
+			this.textBox2.Name = "textBox2";
+			this.textBox2.Size = new System.Drawing.Size(253, 20);
+			this.textBox2.TabIndex = 3;
+			this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged_1);
+			this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+			this.textBox2.Validating += new System.ComponentModel.CancelEventHandler(this.textBox2_Validating);
 			// 
-			// label2
+			// textBox1
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(15, 33);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(35, 13);
-			this.label2.TabIndex = 0;
-			this.label2.Text = "Name";
+			this.textBox1.Location = new System.Drawing.Point(82, 29);
+			this.textBox1.Name = "textBox1";
+			this.textBox1.Size = new System.Drawing.Size(253, 20);
+			this.textBox1.TabIndex = 2;
+			this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
 			// 
 			// label3
 			// 
@@ -80,20 +84,23 @@ namespace ITMO.CSharpCourse.Lab02_Ex07.RegistrationForm
 			this.label3.TabIndex = 1;
 			this.label3.Text = "PIN";
 			// 
-			// textBox1
+			// label2
 			// 
-			this.textBox1.Location = new System.Drawing.Point(82, 29);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(253, 20);
-			this.textBox1.TabIndex = 2;
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(15, 33);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(35, 13);
+			this.label2.TabIndex = 0;
+			this.label2.Text = "Name";
 			// 
-			// textBox2
+			// label1
 			// 
-			this.textBox2.Location = new System.Drawing.Point(82, 60);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(253, 20);
-			this.textBox2.TabIndex = 3;
-			this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(13, 13);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(144, 13);
+			this.label1.TabIndex = 1;
+			this.label1.Text = "Выбирите тип регистрации";
 			// 
 			// checkBox1
 			// 
@@ -105,6 +112,7 @@ namespace ITMO.CSharpCourse.Lab02_Ex07.RegistrationForm
 			this.checkBox1.Text = "Расширенные возможности";
 			this.checkBox1.UseVisualStyleBackColor = true;
 			this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+			this.checkBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.checkBox1_KeyPress);
 			// 
 			// button1
 			// 
@@ -114,6 +122,10 @@ namespace ITMO.CSharpCourse.Lab02_Ex07.RegistrationForm
 			this.button1.TabIndex = 3;
 			this.button1.Text = "Регистрация";
 			this.button1.UseVisualStyleBackColor = true;
+			// 
+			// errorProvider1
+			// 
+			this.errorProvider1.ContainerControl = this;
 			// 
 			// Form1
 			// 
@@ -128,6 +140,7 @@ namespace ITMO.CSharpCourse.Lab02_Ex07.RegistrationForm
 			this.Text = "Форма регистрации";
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -143,6 +156,7 @@ namespace ITMO.CSharpCourse.Lab02_Ex07.RegistrationForm
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.CheckBox checkBox1;
 		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.ErrorProvider errorProvider1;
 	}
 }
 
