@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITMO.CSCourse.Lab03_Ex03.WinButNum
+namespace ITMO.CSCourse.Lab03_Ex04.ValidationFormUserControl
 {
 	public partial class Form1 : Form
 	{
 		public Form1()
 		{
 			InitializeComponent();
-		}
-
-		private void clickButton1_Click(object sender, EventArgs e)
-		{
-
 		}
 	}
 }

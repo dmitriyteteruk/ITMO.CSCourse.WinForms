@@ -41,6 +41,7 @@ namespace ITMO.CSCourse.Lab03_Ex03.WinButNum
 			this.clickButton1.TabIndex = 0;
 			this.clickButton1.Text = "Нажми";
 			this.clickButton1.UseVisualStyleBackColor = true;
+			this.clickButton1.Click += new System.EventHandler(this.clickButton1_Click);
 			// 
 			// Form1
 			// 

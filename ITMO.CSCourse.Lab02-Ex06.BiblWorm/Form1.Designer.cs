@@ -30,6 +30,7 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 		{
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
+			this.buttonAddBook = new System.Windows.Forms.Button();
 			this.checkBox2 = new System.Windows.Forms.CheckBox();
 			this.checkBox1 = new System.Windows.Forms.CheckBox();
 			this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
@@ -47,8 +48,8 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
-			this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-			this.checkBox3 = new System.Windows.Forms.CheckBox();
+			this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+			this.label8 = new System.Windows.Forms.Label();
 			this.buttonAddMagazine = new System.Windows.Forms.Button();
 			this.checkBox4 = new System.Windows.Forms.CheckBox();
 			this.checkBox5 = new System.Windows.Forms.CheckBox();
@@ -60,10 +61,11 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 			this.labelVolume = new System.Windows.Forms.Label();
 			this.textBoxTitle = new System.Windows.Forms.TextBox();
 			this.labelTitle = new System.Windows.Forms.Label();
-			this.buttonAddBook = new System.Windows.Forms.Button();
+			this.tabPage3 = new System.Windows.Forms.TabPage();
+			this.userControl11 = new ITMO.CSCourse.Lab03_Ex04.ValidationFormUserControl.UserControl1();
+			this.checkBox3 = new System.Windows.Forms.CheckBox();
 			this.buttonLookBookOrMagazine = new System.Windows.Forms.Button();
-			this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-			this.label8 = new System.Windows.Forms.Label();
+			this.richTextBox1 = new System.Windows.Forms.RichTextBox();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
@@ -71,15 +73,17 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
 			this.tabPage2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownYear)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownNumber)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+			this.tabPage3.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// tabControl1
 			// 
 			this.tabControl1.Controls.Add(this.tabPage1);
 			this.tabControl1.Controls.Add(this.tabPage2);
+			this.tabControl1.Controls.Add(this.tabPage3);
 			this.tabControl1.Dock = System.Windows.Forms.DockStyle.Left;
 			this.tabControl1.Location = new System.Drawing.Point(0, 0);
 			this.tabControl1.Name = "tabControl1";
@@ -113,6 +117,16 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 			this.tabPage1.TabIndex = 0;
 			this.tabPage1.Text = "Книги";
 			this.tabPage1.UseVisualStyleBackColor = true;
+			// 
+			// buttonAddBook
+			// 
+			this.buttonAddBook.Location = new System.Drawing.Point(14, 367);
+			this.buttonAddBook.Name = "buttonAddBook";
+			this.buttonAddBook.Size = new System.Drawing.Size(308, 47);
+			this.buttonAddBook.TabIndex = 16;
+			this.buttonAddBook.Text = "Добавить книгу";
+			this.buttonAddBook.UseVisualStyleBackColor = true;
+			this.buttonAddBook.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// checkBox2
 			// 
@@ -300,23 +314,26 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 			this.tabPage2.Text = "Журналы";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
-			// richTextBox1
+			// numericUpDown5
 			// 
-			this.richTextBox1.Location = new System.Drawing.Point(351, 22);
-			this.richTextBox1.Name = "richTextBox1";
-			this.richTextBox1.Size = new System.Drawing.Size(438, 352);
-			this.richTextBox1.TabIndex = 1;
-			this.richTextBox1.Text = "";
+			this.numericUpDown5.Location = new System.Drawing.Point(126, 202);
+			this.numericUpDown5.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+			this.numericUpDown5.Name = "numericUpDown5";
+			this.numericUpDown5.Size = new System.Drawing.Size(203, 20);
+			this.numericUpDown5.TabIndex = 35;
 			// 
-			// checkBox3
+			// label8
 			// 
-			this.checkBox3.AutoSize = true;
-			this.checkBox3.Location = new System.Drawing.Point(607, 398);
-			this.checkBox3.Name = "checkBox3";
-			this.checkBox3.Size = new System.Drawing.Size(181, 17);
-			this.checkBox3.TabIndex = 3;
-			this.checkBox3.Text = "Сортировать по инвентарному";
-			this.checkBox3.UseVisualStyleBackColor = true;
+			this.label8.AutoSize = true;
+			this.label8.Location = new System.Drawing.Point(7, 206);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(76, 13);
+			this.label8.TabIndex = 34;
+			this.label8.Text = "Инвентарный";
 			// 
 			// buttonAddMagazine
 			// 
@@ -433,15 +450,33 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 			this.labelTitle.TabIndex = 17;
 			this.labelTitle.Text = "Название";
 			// 
-			// buttonAddBook
+			// tabPage3
 			// 
-			this.buttonAddBook.Location = new System.Drawing.Point(14, 367);
-			this.buttonAddBook.Name = "buttonAddBook";
-			this.buttonAddBook.Size = new System.Drawing.Size(308, 47);
-			this.buttonAddBook.TabIndex = 16;
-			this.buttonAddBook.Text = "Добавить книгу";
-			this.buttonAddBook.UseVisualStyleBackColor = true;
-			this.buttonAddBook.Click += new System.EventHandler(this.button1_Click);
+			this.tabPage3.Controls.Add(this.userControl11);
+			this.tabPage3.Location = new System.Drawing.Point(4, 22);
+			this.tabPage3.Name = "tabPage3";
+			this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPage3.Size = new System.Drawing.Size(336, 424);
+			this.tabPage3.TabIndex = 2;
+			this.tabPage3.Text = "ИНН";
+			this.tabPage3.UseVisualStyleBackColor = true;
+			// 
+			// userControl11
+			// 
+			this.userControl11.Location = new System.Drawing.Point(3, 6);
+			this.userControl11.Name = "userControl11";
+			this.userControl11.Size = new System.Drawing.Size(327, 227);
+			this.userControl11.TabIndex = 0;
+			// 
+			// checkBox3
+			// 
+			this.checkBox3.AutoSize = true;
+			this.checkBox3.Location = new System.Drawing.Point(607, 398);
+			this.checkBox3.Name = "checkBox3";
+			this.checkBox3.Size = new System.Drawing.Size(181, 17);
+			this.checkBox3.TabIndex = 3;
+			this.checkBox3.Text = "Сортировать по инвентарному";
+			this.checkBox3.UseVisualStyleBackColor = true;
 			// 
 			// buttonLookBookOrMagazine
 			// 
@@ -453,26 +488,13 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 			this.buttonLookBookOrMagazine.UseVisualStyleBackColor = true;
 			this.buttonLookBookOrMagazine.Click += new System.EventHandler(this.button1_Click_1);
 			// 
-			// numericUpDown5
+			// richTextBox1
 			// 
-			this.numericUpDown5.Location = new System.Drawing.Point(126, 202);
-			this.numericUpDown5.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-			this.numericUpDown5.Name = "numericUpDown5";
-			this.numericUpDown5.Size = new System.Drawing.Size(203, 20);
-			this.numericUpDown5.TabIndex = 35;
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Location = new System.Drawing.Point(7, 206);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(76, 13);
-			this.label8.TabIndex = 34;
-			this.label8.Text = "Инвентарный";
+			this.richTextBox1.Location = new System.Drawing.Point(351, 22);
+			this.richTextBox1.Name = "richTextBox1";
+			this.richTextBox1.Size = new System.Drawing.Size(438, 352);
+			this.richTextBox1.TabIndex = 1;
+			this.richTextBox1.Text = "";
 			// 
 			// Form1
 			// 
@@ -494,9 +516,10 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
 			this.tabPage2.ResumeLayout(false);
 			this.tabPage2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownYear)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownNumber)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+			this.tabPage3.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -523,7 +546,6 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.CheckBox checkBox2;
 		private System.Windows.Forms.CheckBox checkBox1;
-		private System.Windows.Forms.RichTextBox richTextBox1;
 		private System.Windows.Forms.CheckBox checkBox3;
 		private System.Windows.Forms.Button buttonAddMagazine;
 		private System.Windows.Forms.CheckBox checkBox4;
@@ -540,6 +562,9 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 		private System.Windows.Forms.Button buttonLookBookOrMagazine;
 		private System.Windows.Forms.NumericUpDown numericUpDown5;
 		private System.Windows.Forms.Label label8;
+		private System.Windows.Forms.TabPage tabPage3;
+		private Lab03_Ex04.ValidationFormUserControl.UserControl1 userControl11;
+		private System.Windows.Forms.RichTextBox richTextBox1;
 	}
 }
 

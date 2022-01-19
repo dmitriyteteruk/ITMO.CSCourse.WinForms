@@ -99,11 +99,11 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 			set { numericUpDownYear.Value = value; }
 		}
 
-		List<Item> its = new List<Item>();
+		List<MyClass.Item> its = new List<MyClass.Item>();
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			Book b = new Book(Author, Title, PublishHouse, Page, Year, InvNumber, Existence);
+			MyClass.Book b = new MyClass.Book(Author, Title, PublishHouse, Page, Year, InvNumber, Existence);
 			if (ReturnTime) b.ReturnSrok(); // Далее в этом обработчике реализуйте проверку возврата книги в срок
 			b.PriceBook(PeriodUse);         // И расчет стоимости с учетом срока пользования книгой:
 			its.Add(b);                     // Теперь добавьте книгу в список
@@ -125,7 +125,7 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 			// Для вывода информации создайте строку класса StringBuilder и с помощью цикла
 			// постройте строку и информацией о единице хранения
 			StringBuilder sb = new StringBuilder();
-			foreach (Item item in its)
+			foreach (MyClass.Item item in its)
 			{
 				sb.Append("\n" + item.ToString());
 			}
@@ -136,7 +136,7 @@ namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 
 		private void buttonAddMagazine_Click(object sender, EventArgs e)
 		{
-			Magazine b = new Magazine(title, year, volume, number, InvNumber, Existence);
+			MyClass.Magazine b = new MyClass.Magazine(title, year, volume, number, InvNumber, Existence);
 			//if (ReturnTime) b.Return(); // Далее в этом обработчике реализуйте проверку возврата книги в срок
 			//b.PriceBook(PeriodUse);         // И расчет стоимости с учетом срока пользования книгой:
 			its.Add(b);                     // Теперь добавьте книгу в список

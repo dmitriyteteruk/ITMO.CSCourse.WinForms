@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 // исходный код после разархивации
-// namespace MyClass
+namespace MyClass
 
-namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
+// namespace ITMO.CSCourse.Lab02_Ex06.BiblWorm
 {
     abstract class Item : IComparable
     {

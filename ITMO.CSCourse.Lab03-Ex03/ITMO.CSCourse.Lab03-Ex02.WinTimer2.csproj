@@ -88,5 +88,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ITMO.CSCourse.Lab03-Ex01.15.ControlLibrary\ITMO.CSCourse.Lab03-Ex01.15.ControlLibrary.csproj">
+      <Project>{9B7F271D-2072-466A-8200-954EF9D001F6}</Project>
+      <Name>ITMO.CSCourse.Lab03-Ex01.15.ControlLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -19,5 +19,15 @@ namespace ITMO.CSCourse.Lab03_Ex03
 		{
 			InitializeComponent();
 		}
+
+		private void userControlTimer21_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void userControl11_Load(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
