@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.Lab03-Ex03.Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.Lab03-Ex04.ValidationFormUserControl", "ITMO.CSCourse.Lab03-Ex04.ValidationFormUserControl\ITMO.CSCourse.Lab03-Ex04.ValidationFormUserControl.csproj", "{2CB5FCA2-1803-4C37-AA3E-8D8E8B239BF6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMTO.CSCourse.SQL-connection", "IMTO.CSCourse.SQL-connection\IMTO.CSCourse.SQL-connection.csproj", "{7211801E-A315-401D-9071-FA8363A135D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{2CB5FCA2-1803-4C37-AA3E-8D8E8B239BF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CB5FCA2-1803-4C37-AA3E-8D8E8B239BF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CB5FCA2-1803-4C37-AA3E-8D8E8B239BF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7211801E-A315-401D-9071-FA8363A135D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7211801E-A315-401D-9071-FA8363A135D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7211801E-A315-401D-9071-FA8363A135D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7211801E-A315-401D-9071-FA8363A135D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
