@@ -1,0 +1,16 @@
+﻿<Window x:Class="ITMO.CSCourse.WPF.TestApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ITMO.CSCourse.WPF.TestApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="Button1" Content="Получить данны из БД" HorizontalAlignment="Left" Margin="24,97,0,0" VerticalAlignment="Top" Width="177" Height="29" Click="Button1_Click"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="24,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" TextChanged="textBox1_TextChanged"/>
+        <ListBox x:Name="lbResultData" HorizontalAlignment="Left" Height="336" Margin="235,31,0,0" VerticalAlignment="Top" Width="510"/>
+        <Button x:Name="Button_CleanResultWindow" Content="Очистить окно результата" HorizontalAlignment="Left" Margin="24,156,0,0" VerticalAlignment="Top" Width="177" Height="29" Click="Button_CleanResultWindow_Click"/>
+
+    </Grid>
+</Window>
