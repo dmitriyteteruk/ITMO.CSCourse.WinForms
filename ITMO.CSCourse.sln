@@ -37,9 +37,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMTO.CSCourse.SQL-connectio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.WPF.TestApp", "ITMO.CSCourse.WPF.TestApp\ITMO.CSCourse.WPF.TestApp.csproj", "{393B3AD5-539E-40A6-8454-73AA1EED4ABE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.WPF-Practice-Ex01.WpfHello", "ITMO.CSCourse.WPF-Practice-Ex01.WpfHello\ITMO.CSCourse.WPF-Practice-Ex01.WpfHello.csproj", "{9F9B165A-F67C-41DA-A32B-80E74B19D71F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.WPF-Practice01-Ex01.WpfHello", "ITMO.CSCourse.WPF-Practice-Ex01.WpfHello\ITMO.CSCourse.WPF-Practice01-Ex01.WpfHello.csproj", "{9F9B165A-F67C-41DA-A32B-80E74B19D71F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.WPF-Practice-Ex02.WpfHelloNav", "ITMO.CSCourse.WPF-Practice-Ex02.WpfHelloNav\ITMO.CSCourse.WPF-Practice-Ex02.WpfHelloNav.csproj", "{37E6A54D-009A-4257-99DB-8A86C4C42124}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.WPF-Practice01-Ex02.WpfHelloNav", "ITMO.CSCourse.WPF-Practice-Ex02.WpfHelloNav\ITMO.CSCourse.WPF-Practice01-Ex02.WpfHelloNav.csproj", "{37E6A54D-009A-4257-99DB-8A86C4C42124}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

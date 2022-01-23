@@ -60,5 +60,10 @@ namespace ITMO.CSCourse.WPF_Practice_Ex01.WpfHello
 		{
 			button.IsEnabled = true;          // код из упражнения 03
 		}
+
+		private void button3_Click(object sender, RoutedEventArgs e)
+		{
+			myTextBox.Text = DateTime.Now.ToString();
+		}
 	}
 }
