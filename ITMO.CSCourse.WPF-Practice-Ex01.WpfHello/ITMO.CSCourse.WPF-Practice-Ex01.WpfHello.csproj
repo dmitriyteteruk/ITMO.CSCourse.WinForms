@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{393B3AD5-539E-40A6-8454-73AA1EED4ABE}</ProjectGuid>
+    <ProjectGuid>{9F9B165A-F67C-41DA-A32B-80E74B19D71F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ITMO.CSCourse.WPF.TestApp</RootNamespace>
-    <AssemblyName>ITMO.CSCourse.WPF.TestApp</AssemblyName>
+    <RootNamespace>ITMO.CSCourse.WPF_Practice_Ex01.WpfHello</RootNamespace>
+    <AssemblyName>ITMO.CSCourse.WPF-Practice-Ex01.WpfHello</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -93,12 +93,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Button1-Image.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="MainWindowIconWPF_SQL.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

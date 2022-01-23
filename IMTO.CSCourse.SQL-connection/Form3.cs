@@ -36,7 +36,7 @@ namespace IMTO.CSCourse.SQL_connection
 					{
 						while (reader.Read())
 						{
-							lbResultData.Items.Add(reader[0] + " " + reader[1] + " " + reader[2] + reader[3] + " " + reader[4] + " " + reader[5] + " " + reader[6] + " " + reader[7]);
+							lbResultData.Items.Add(reader[0] + "  " + reader[1] + "  " + reader[2] + "  " + reader[3] + "  " + reader[4] + "  " + reader[5] + "  " + reader[6] + "  " + reader[7]);
 						}
 					}
 				}

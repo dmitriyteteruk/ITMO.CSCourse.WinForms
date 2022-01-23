@@ -37,7 +37,10 @@ namespace ITMO.CSCourse.WPF.TestApp
 					{
 						while (reader.Read())
 						{
-							lbResultData.Items.Add(reader[0] + " " + reader[1] + " " + reader[2] + reader[3] + " " + reader[4] + " " + reader[5] + " " + reader[6] + " " + reader[7]);
+							//for (int i = 0; i < reader.FieldCount; ++i)
+							//lbResultData.Items.Add(reader[i].ToString() + " ");
+							//lbResultData.Items.Add(reader[i] + " ");
+							lbResultData.Items.Add(reader[0] + " " + reader[1] + " " + reader[2] + " " + reader[3] + " " + reader[4] + " " + reader[5] + " " + reader[6] + " " + reader[7]);
 						}
 					}
 				}
@@ -52,6 +55,11 @@ namespace ITMO.CSCourse.WPF.TestApp
 		private void Button_CleanResultWindow_Click(object sender, RoutedEventArgs e)
 		{
 			lbResultData.Items.Clear();
+		}
+
+		private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+		{
+
 		}
 	}
 }
