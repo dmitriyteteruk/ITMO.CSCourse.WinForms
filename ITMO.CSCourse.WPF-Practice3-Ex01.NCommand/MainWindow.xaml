@@ -22,7 +22,7 @@
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <!-- Код из 4-2 -->
+        <!-- Код из 3-2 -->
         <Menu HorizontalAlignment="Left" Height="100" Margin="24,109,0,0" VerticalAlignment="Top" Width="296">
             <MenuItem Header="Menu Items"/>
             <MenuItem Header="Launch" Command="local:CustomCommands.Launch"/>

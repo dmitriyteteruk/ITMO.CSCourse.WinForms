@@ -23,7 +23,7 @@ namespace ITMO.CSCourse.WPF_Practice3_Ex01.NCommand
 		public MainWindow()
 		{
 			InitializeComponent();
-			// код 4-2
+			// код 3-2
 			CommandBinding abinding = new CommandBinding();
 			abinding.Command = CustomCommands.Launch;
 			abinding.Executed += new ExecutedRoutedEventHandler(Launch_Handler);
@@ -31,7 +31,7 @@ namespace ITMO.CSCourse.WPF_Practice3_Ex01.NCommand
 			this.CommandBindings.Add(abinding);
 		}
 
-		// код 4-2
+		// код 3-2
 		private void Launch_Handler(object sender, ExecutedRoutedEventArgs e)
 		{
 			richTextBox.AppendText(textBox.Text);
@@ -43,7 +43,7 @@ namespace ITMO.CSCourse.WPF_Practice3_Ex01.NCommand
 				writer.Flush();
 			}
 		}
-		// код 4-2
+		// код 3-2
 		private void LaunchEnabled_Handler(object sender, CanExecuteRoutedEventArgs e)
 		{
 			e.CanExecute = (bool)checkBox.IsChecked;

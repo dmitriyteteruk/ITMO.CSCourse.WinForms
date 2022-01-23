@@ -1,4 +1,4 @@
-﻿// код из упражнения 04-02
+﻿// код из упражнения 03-02
 using System;
 using System.Collections.Generic;
 using System.Linq;
