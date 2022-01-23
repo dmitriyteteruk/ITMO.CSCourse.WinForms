@@ -23,6 +23,30 @@ namespace ITMO.CSCourse.WPF_Practice3_Ex01.NCommand
 		public MainWindow()
 		{
 			InitializeComponent();
+			// код 4-2
+			CommandBinding abinding = new CommandBinding();
+			abinding.Command = CustomCommands.Launch;
+			abinding.Executed += new ExecutedRoutedEventHandler(Launch_Handler);
+			abinding.CanExecute += new CanExecuteRoutedEventHandler(LaunchEnabled_Handler);
+			this.CommandBindings.Add(abinding);
+		}
+
+		// код 4-2
+		private void Launch_Handler(object sender, ExecutedRoutedEventArgs e)
+		{
+			richTextBox.AppendText(textBox.Text);
+			using (System.IO.StreamWriter writer = new System.IO.StreamWriter("C:\\Users\\dteteruk\\Documents\\_ITMO\\logs4-2.txt", true))
+			{ 
+				writer.WriteLine("Внесено {0}: {1} ", textBox.Text, 
+					DateTime.Now.ToShortDateString() + ", время: " + 
+					DateTime.Now.ToLongTimeString());
+				writer.Flush();
+			}
+		}
+		// код 4-2
+		private void LaunchEnabled_Handler(object sender, CanExecuteRoutedEventArgs e)
+		{
+			e.CanExecute = (bool)checkBox.IsChecked;
 		}
 	}
 }
