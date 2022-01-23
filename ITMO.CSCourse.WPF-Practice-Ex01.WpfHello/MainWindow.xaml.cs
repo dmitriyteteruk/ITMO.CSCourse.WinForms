@@ -23,8 +23,8 @@ namespace ITMO.CSCourse.WPF_Practice_Ex01.WpfHello
 		public MainWindow()
 		{
 			InitializeComponent();
-			button.IsEnabled = false;           // код из упражнения 03
-			button1.IsEnabled = false;          // код из упражнения 03
+			button.IsEnabled = false;           // код из упражнения 01-03
+			button1.IsEnabled = false;          // код из упражнения 01-03
 		}
 
 		private void Button_Click(object sender, RoutedEventArgs e)
@@ -34,7 +34,7 @@ namespace ITMO.CSCourse.WPF_Practice_Ex01.WpfHello
 				System.IO.StreamWriter sw = new System.IO.StreamWriter("C:\\Users\\dteteruk\\Documents\\_ITMO\\username.txt");
 				sw.WriteLine(textBox.Text);
 				sw.Close();
-				button1.IsEnabled = true;	  // код из упражнения 03
+				button1.IsEnabled = true;    // код из упражнения 01-03
 			}
 			catch (Exception ex)
 			{
@@ -56,14 +56,16 @@ namespace ITMO.CSCourse.WPF_Practice_Ex01.WpfHello
 			}
 		}
 
+		// код из упражнения 01-03
 		private void textBox_TextChanged(object sender, TextChangedEventArgs e)
 		{
-			button.IsEnabled = true;          // код из упражнения 03
+			button.IsEnabled = true;         
 		}
 
+		// код из упражнения 01-04
 		private void button3_Click(object sender, RoutedEventArgs e)
 		{
-			myTextBox.Text = DateTime.Now.ToString();
+			myTextBox.Text = DateTime.Now.ToString();   // код из упражнения 01-04
 		}
 	}
 }
