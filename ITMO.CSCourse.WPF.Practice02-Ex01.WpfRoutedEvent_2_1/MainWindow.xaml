@@ -12,9 +12,9 @@
             <ColumnDefinition Width="29*"/>
         </Grid.ColumnDefinitions>
         <TextBox TextBoxBase.TextChanged="TextBoxBase_TextChanged_1"  x:Name="TextBoxBase" HorizontalAlignment="Left" Height="23" Margin="33,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <RadioButton x:Name="radBut1" Content="RadioButton1" HorizontalAlignment="Left" Margin="4,41,0,0" VerticalAlignment="Top" Grid.Column="1" Height="15" Width="91"/>
-        <RadioButton x:Name="radBut2" Content="RadioButton2" HorizontalAlignment="Left" Margin="4,98,0,0" VerticalAlignment="Top" Grid.Column="1" Height="15" Width="91"/>
-        <RadioButton x:Name="radBut3" Content="RadioButton3" HorizontalAlignment="Left" Margin="4,162,0,0" VerticalAlignment="Top" Grid.Column="1" Height="15" Width="91"/>
+        <RadioButton x:Name="radBut1" Content="Обработка события TextBox" HorizontalAlignment="Left" Margin="4,41,0,0" VerticalAlignment="Top" Grid.Column="1" Height="15" Width="186"/>
+        <RadioButton x:Name="radBut2" Content="Обработка события Grid" HorizontalAlignment="Left" Margin="4,98,0,0" VerticalAlignment="Top" Grid.Column="1" Height="15" Width="186"/>
+        <RadioButton x:Name="radBut3" Content="Обработка события Window" HorizontalAlignment="Left" Margin="4,162,0,0" VerticalAlignment="Top" Grid.Column="1" Height="15" Width="186"/>
 
     </Grid>
 </Window>

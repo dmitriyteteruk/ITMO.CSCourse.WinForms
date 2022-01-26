@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7211801E-A315-401D-9071-FA8363A135D7}</ProjectGuid>
+    <ProjectGuid>{5F150A77-E5EE-409A-9430-99D6D3DBC488}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>IMTO.CSCourse.SQL_connection</RootNamespace>
-    <AssemblyName>IMTO.CSCourse.SQL-connection</AssemblyName>
+    <RootNamespace>ITMO.CSCourse.SQL_App</RootNamespace>
+    <AssemblyName>ITMO.CSCourse.SQL-App</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,26 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form3.cs">
+    <Compile Include="FillOrCancel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="FillOrCancel.Designer.cs">
+      <DependentUpon>FillOrCancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Navigation.Designer.cs">
+      <DependentUpon>Navigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCustomer.Designer.cs">
+      <DependentUpon>NewCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WindowsFormsDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>WindowsFormsDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="_sql_for_events_from_ASADataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_sql_for_events_from_ASADataSet.xsd</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Navigation.resx">
+      <DependentUpon>Navigation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -85,40 +87,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="WindowsFormsDataSet.xsc">
-      <DependentUpon>WindowsFormsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="WindowsFormsDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>WindowsFormsDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="WindowsFormsDataSet.xss">
-      <DependentUpon>WindowsFormsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="_sql_for_events_from_ASADataSet.xsc">
-      <DependentUpon>_sql_for_events_from_ASADataSet.xsd</DependentUpon>
-    </None>
-    <None Include="_sql_for_events_from_ASADataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_sql_for_events_from_ASADataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_sql_for_events_from_ASADataSet.xss">
-      <DependentUpon>_sql_for_events_from_ASADataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ITMO.CSCourse.Lab03-Ex01.15.ControlLibrary\ITMO.CSCourse.Lab03-Ex01.15.ControlLibrary.csproj">
-      <Project>{9B7F271D-2072-466A-8200-954EF9D001F6}</Project>
-      <Name>ITMO.CSCourse.Lab03-Ex01.15.ControlLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

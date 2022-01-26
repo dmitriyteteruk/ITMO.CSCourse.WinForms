@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IMTO.CSCourse.SQL_connection.Properties {
+namespace SAMPLES.FirstDataApp.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -26,11 +26,11 @@ namespace IMTO.CSCourse.SQL_connection.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql-for-events-from-asa.database.windows.net;Initial Catalog=sql-for-" +
-            "events-from-ASA;User ID=sqlserverADMIN;Password=Pa$$word$erver1")]
-        public string sql_for_events_from_ASAConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-JAMOVG3\\SQLEXPRESS;Initial Catalog=Northwind;Integrated Secur" +
+            "ity=True")]
+        public string NorthwindConnectionString {
             get {
-                return ((string)(this["sql_for_events_from_ASAConnectionString"]));
+                return ((string)(this["NorthwindConnectionString"]));
             }
         }
         
