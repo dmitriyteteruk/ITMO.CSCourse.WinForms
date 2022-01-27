@@ -39,7 +39,8 @@ namespace ITMO.CSCourse.WPF_Practice02_Ex02.WpfRoutedEvent_2_2
 					break;
 			}
 			e.Handled = true;
-			txtBox.Text = String.Format("{0:#.##}", a);
+			txtBoxResult.Text = String.Format("{0:#.##}", a);
+			//txtBox.Text = String.Format("{0:#.##}", a);
 		}
 	}
 }

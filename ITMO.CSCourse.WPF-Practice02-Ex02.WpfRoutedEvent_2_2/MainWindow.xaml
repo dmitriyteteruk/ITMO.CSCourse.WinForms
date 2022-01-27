@@ -5,13 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ITMO.CSCourse.WPF_Practice02_Ex02.WpfRoutedEvent_2_2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBox x:Name="txtBox" HorizontalAlignment="Left" Height="23" Margin="45,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207"/>
-        <StackPanel ButtonBase.Click="StackPanel_Click_1"  HorizontalAlignment="Left" Height="265" Margin="278,63,0,0" VerticalAlignment="Top" Width="288">
+        Title="MainWindow" Height="450" Width="399">
+    <Grid Margin="0,0,22,0">
+        <TextBox x:Name="txtBox" HorizontalAlignment="Left" Height="23" Margin="45,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293"/>
+        <StackPanel ButtonBase.Click="StackPanel_Click_1"  HorizontalAlignment="Left" Height="45" Margin="45,101,0,0" VerticalAlignment="Top" Width="293">
             <Button x:Name="butAdd" Content="Button1 - сложение"/>
             <Button x:Name="butMult" Content="Button2 - умножение"/>
         </StackPanel>
+        <TextBox x:Name="txtBoxResult" HorizontalAlignment="Left" Height="23" Margin="48,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="LabelForTextInput" Content="Введите число и нажмите любую кнопку ниже" HorizontalAlignment="Left" Margin="48,37,0,0" VerticalAlignment="Top" Width="290"/>
+        <Label x:Name="LabelForResult" Content="Результат вычисления" HorizontalAlignment="Left" Margin="45,161,0,0" VerticalAlignment="Top" Width="293"/>
 
     </Grid>
 </Window>
