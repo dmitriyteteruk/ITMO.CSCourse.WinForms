@@ -14,8 +14,8 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
                 <RichTextBox Grid.Column="2" Name="richTextBox1" Height="Auto" Width="Auto" />
-                <ListBox Grid.Column="0" Name="listBox1" Height="Auto" Width="Auto"></ListBox>
-                <GridSplitter Grid.Column="1" Name="gridSplitter1" Width="5" Height="Auto" />
+            <ListBox Grid.Column="0" Name="listBox1" Height="Auto" Width="Auto" SelectionChanged="listBox1_SelectionChanged_1"/>
+            <GridSplitter Grid.Column="1" Name="gridSplitter1" Width="5" Height="Auto" />
         </Grid>
         <Grid DockPanel.Dock="Top">
             <ToolBar HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="800">

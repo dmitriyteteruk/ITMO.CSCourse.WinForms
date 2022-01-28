@@ -48,7 +48,8 @@ namespace ITMO.CSCourse.WPF_Practice04_Ex01.UserIn3
 			}
 
 
-		private void listBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+
+		private void listBox1_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
 		{
 			try
 			{
