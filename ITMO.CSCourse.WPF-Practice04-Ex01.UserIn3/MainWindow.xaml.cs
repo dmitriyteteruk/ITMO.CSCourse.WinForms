@@ -53,7 +53,7 @@ namespace ITMO.CSCourse.WPF_Practice04_Ex01.UserIn3
 		{
 			try
 			{
-				richTextBox1.Selection.ApplyPropertyValue(FontFamilyProperty, ((ListBoxItem)listBox1.SelectedItem).FontFamily);
+				richTextBox1.Selection.ApplyPropertyValue(FontFamilyProperty, listBox1.SelectedItem);
 			}
 			catch
 			{
