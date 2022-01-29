@@ -16,7 +16,7 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form1());
+			Application.Run(new Form3());
 		}
 	}
 }

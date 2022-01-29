@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5F150A77-E5EE-409A-9430-99D6D3DBC488}</ProjectGuid>
+    <ProjectGuid>{E0EA8A88-AB1F-4D54-9494-8E3A56EF15E0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ITMO.CSCourse.SQL_App</RootNamespace>
-    <AssemblyName>ITMO.CSCourse.SQL-App</AssemblyName>
+    <RootNamespace>ITMO.CSCourse.WF_SQL</RootNamespace>
+    <AssemblyName>ITMO.CSCourse.WF-SQL</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,37 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FillOrCancel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FillOrCancel.Designer.cs">
-      <DependentUpon>FillOrCancel.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Navigation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Navigation.Designer.cs">
-      <DependentUpon>Navigation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NewCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewCustomer.Designer.cs">
-      <DependentUpon>NewCustomer.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WindowsFormsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WindowsFormsDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Navigation.resx">
-      <DependentUpon>Navigation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -96,6 +80,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="WindowsFormsDataSet.xsc">
+      <DependentUpon>WindowsFormsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WindowsFormsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WindowsFormsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WindowsFormsDataSet.xss">
+      <DependentUpon>WindowsFormsDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

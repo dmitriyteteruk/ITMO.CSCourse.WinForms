@@ -1,7 +1,7 @@
 ﻿
 namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 {
-	partial class Form1
+	partial class Form2
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -30,13 +30,17 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-			this.windowsFormsDataSet = new ITMO.CSCourse.Exam5.ReadSQLDBForm.WindowsFormsDataSet();
-			this.giftsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.giftsTableAdapter = new ITMO.CSCourse.Exam5.ReadSQLDBForm.WindowsFormsDataSetTableAdapters.GiftsTableAdapter();
-			this.tableAdapterManager = new ITMO.CSCourse.Exam5.ReadSQLDBForm.WindowsFormsDataSetTableAdapters.TableAdapterManager();
+			System.Windows.Forms.Label firstNameLabel;
+			System.Windows.Forms.Label lastNameLabel;
+			System.Windows.Forms.Label houseNameShortLabel;
+			System.Windows.Forms.Label giftTextShortLabel;
+			System.Windows.Forms.Label giftURLLabel;
+			System.Windows.Forms.Label deliveryDateLabel;
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
 			this.giftsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
 			this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+			this.giftsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.dataSet1 = new ITMO.CSCourse.Exam5.ReadSQLDBForm.DataSet1();
 			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
 			this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -49,50 +53,96 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 			this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.giftsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
 			this.giftsDataGridView = new System.Windows.Forms.DataGridView();
-			this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.label1 = new System.Windows.Forms.Label();
-			((System.ComponentModel.ISupportInitialize)(this.windowsFormsDataSet)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.giftsBindingSource)).BeginInit();
+			this.giftsTableAdapter = new ITMO.CSCourse.Exam5.ReadSQLDBForm.DataSet1TableAdapters.GiftsTableAdapter();
+			this.tableAdapterManager = new ITMO.CSCourse.Exam5.ReadSQLDBForm.DataSet1TableAdapters.TableAdapterManager();
+			this.firstNameTextBox = new System.Windows.Forms.TextBox();
+			this.lastNameTextBox = new System.Windows.Forms.TextBox();
+			this.houseNameShortTextBox = new System.Windows.Forms.TextBox();
+			this.giftTextShortTextBox = new System.Windows.Forms.TextBox();
+			this.giftURLTextBox = new System.Windows.Forms.TextBox();
+			this.deliveryDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
+			this.buttonAddNewRecordToDB = new System.Windows.Forms.Button();
+			this.buttonSaveChangesToDB = new System.Windows.Forms.Button();
+			this.buttonDeleteRecordFromDB = new System.Windows.Forms.Button();
+			firstNameLabel = new System.Windows.Forms.Label();
+			lastNameLabel = new System.Windows.Forms.Label();
+			houseNameShortLabel = new System.Windows.Forms.Label();
+			giftTextShortLabel = new System.Windows.Forms.Label();
+			giftURLLabel = new System.Windows.Forms.Label();
+			deliveryDateLabel = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.giftsBindingNavigator)).BeginInit();
 			this.giftsBindingNavigator.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.giftsBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.giftsDataGridView)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// windowsFormsDataSet
+			// firstNameLabel
 			// 
-			this.windowsFormsDataSet.DataSetName = "WindowsFormsDataSet";
-			this.windowsFormsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+			firstNameLabel.AutoSize = true;
+			firstNameLabel.Location = new System.Drawing.Point(12, 272);
+			firstNameLabel.Name = "firstNameLabel";
+			firstNameLabel.Size = new System.Drawing.Size(60, 13);
+			firstNameLabel.TabIndex = 4;
+			firstNameLabel.Text = "First Name:";
 			// 
-			// giftsBindingSource
+			// lastNameLabel
 			// 
-			this.giftsBindingSource.DataMember = "Gifts";
-			this.giftsBindingSource.DataSource = this.windowsFormsDataSet;
+			lastNameLabel.AutoSize = true;
+			lastNameLabel.Location = new System.Drawing.Point(12, 298);
+			lastNameLabel.Name = "lastNameLabel";
+			lastNameLabel.Size = new System.Drawing.Size(61, 13);
+			lastNameLabel.TabIndex = 6;
+			lastNameLabel.Text = "Last Name:";
 			// 
-			// giftsTableAdapter
+			// houseNameShortLabel
 			// 
-			this.giftsTableAdapter.ClearBeforeFill = true;
+			houseNameShortLabel.AutoSize = true;
+			houseNameShortLabel.Location = new System.Drawing.Point(12, 324);
+			houseNameShortLabel.Name = "houseNameShortLabel";
+			houseNameShortLabel.Size = new System.Drawing.Size(100, 13);
+			houseNameShortLabel.TabIndex = 8;
+			houseNameShortLabel.Text = "House Name Short:";
 			// 
-			// tableAdapterManager
+			// giftTextShortLabel
 			// 
-			this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-			this.tableAdapterManager.GiftsTableAdapter = this.giftsTableAdapter;
-			this.tableAdapterManager.UpdateOrder = ITMO.CSCourse.Exam5.ReadSQLDBForm.WindowsFormsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+			giftTextShortLabel.AutoSize = true;
+			giftTextShortLabel.Location = new System.Drawing.Point(12, 350);
+			giftTextShortLabel.Name = "giftTextShortLabel";
+			giftTextShortLabel.Size = new System.Drawing.Size(78, 13);
+			giftTextShortLabel.TabIndex = 10;
+			giftTextShortLabel.Text = "Gift Text Short:";
+			// 
+			// giftURLLabel
+			// 
+			giftURLLabel.AutoSize = true;
+			giftURLLabel.Location = new System.Drawing.Point(12, 376);
+			giftURLLabel.Name = "giftURLLabel";
+			giftURLLabel.Size = new System.Drawing.Size(51, 13);
+			giftURLLabel.TabIndex = 12;
+			giftURLLabel.Text = "Gift URL:";
+			// 
+			// deliveryDateLabel
+			// 
+			deliveryDateLabel.AutoSize = true;
+			deliveryDateLabel.Location = new System.Drawing.Point(12, 403);
+			deliveryDateLabel.Name = "deliveryDateLabel";
+			deliveryDateLabel.Size = new System.Drawing.Size(74, 13);
+			deliveryDateLabel.TabIndex = 14;
+			deliveryDateLabel.Text = "Delivery Date:";
 			// 
 			// giftsBindingNavigator
 			// 
 			this.giftsBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
 			this.giftsBindingNavigator.BindingSource = this.giftsBindingSource;
 			this.giftsBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-			this.giftsBindingNavigator.CountItemFormat = "из {0}";
 			this.giftsBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-			this.giftsBindingNavigator.Dock = System.Windows.Forms.DockStyle.None;
 			this.giftsBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -106,14 +156,14 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.giftsBindingNavigatorSaveItem});
-			this.giftsBindingNavigator.Location = new System.Drawing.Point(0, 30);
+			this.giftsBindingNavigator.Location = new System.Drawing.Point(0, 0);
 			this.giftsBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
 			this.giftsBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
 			this.giftsBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
 			this.giftsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
 			this.giftsBindingNavigator.Name = "giftsBindingNavigator";
 			this.giftsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-			this.giftsBindingNavigator.Size = new System.Drawing.Size(279, 25);
+			this.giftsBindingNavigator.Size = new System.Drawing.Size(654, 25);
 			this.giftsBindingNavigator.TabIndex = 0;
 			this.giftsBindingNavigator.Text = "bindingNavigator1";
 			// 
@@ -125,14 +175,23 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 			this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
 			this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
 			this.bindingNavigatorAddNewItem.Text = "Add new";
-			this.bindingNavigatorAddNewItem.ToolTipText = "Добавить";
-			this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
+			// 
+			// giftsBindingSource
+			// 
+			this.giftsBindingSource.DataMember = "Gifts";
+			this.giftsBindingSource.DataSource = this.dataSet1;
+			this.giftsBindingSource.CurrentChanged += new System.EventHandler(this.giftsBindingSource_CurrentChanged);
+			// 
+			// dataSet1
+			// 
+			this.dataSet1.DataSetName = "DataSet1";
+			this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
 			// 
 			// bindingNavigatorCountItem
 			// 
 			this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-			this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 22);
-			this.bindingNavigatorCountItem.Text = "из {0}";
+			this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+			this.bindingNavigatorCountItem.Text = "of {0}";
 			this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
 			// 
 			// bindingNavigatorDeleteItem
@@ -143,7 +202,7 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 			this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
 			this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
 			this.bindingNavigatorDeleteItem.Text = "Delete";
-			this.bindingNavigatorDeleteItem.ToolTipText = "Удалить";
+			this.bindingNavigatorDeleteItem.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click);
 			// 
 			// bindingNavigatorMoveFirstItem
 			// 
@@ -152,7 +211,7 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
 			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
 			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-			this.bindingNavigatorMoveFirstItem.Text = "В начало";
+			this.bindingNavigatorMoveFirstItem.Text = "Move first";
 			// 
 			// bindingNavigatorMovePreviousItem
 			// 
@@ -161,7 +220,7 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
 			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
 			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-			this.bindingNavigatorMovePreviousItem.Text = "Назад";
+			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
 			// 
 			// bindingNavigatorSeparator
 			// 
@@ -189,7 +248,7 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
 			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
 			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-			this.bindingNavigatorMoveNextItem.Text = "Следующая";
+			this.bindingNavigatorMoveNextItem.Text = "Move next";
 			// 
 			// bindingNavigatorMoveLastItem
 			// 
@@ -198,7 +257,7 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
 			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
 			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-			this.bindingNavigatorMoveLastItem.Text = "В конец списка";
+			this.bindingNavigatorMoveLastItem.Text = "Move last";
 			// 
 			// bindingNavigatorSeparator2
 			// 
@@ -212,7 +271,6 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 			this.giftsBindingNavigatorSaveItem.Name = "giftsBindingNavigatorSaveItem";
 			this.giftsBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
 			this.giftsBindingNavigatorSaveItem.Text = "Save Data";
-			this.giftsBindingNavigatorSaveItem.ToolTipText = "Сохранить данные";
 			this.giftsBindingNavigatorSaveItem.Click += new System.EventHandler(this.giftsBindingNavigatorSaveItem_Click);
 			// 
 			// giftsDataGridView
@@ -220,26 +278,17 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 			this.giftsDataGridView.AutoGenerateColumns = false;
 			this.giftsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.giftsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
 			this.giftsDataGridView.DataSource = this.giftsBindingSource;
-			this.giftsDataGridView.Location = new System.Drawing.Point(0, 58);
+			this.giftsDataGridView.Location = new System.Drawing.Point(0, 28);
 			this.giftsDataGridView.Name = "giftsDataGridView";
-			this.giftsDataGridView.Size = new System.Drawing.Size(846, 214);
+			this.giftsDataGridView.Size = new System.Drawing.Size(647, 220);
 			this.giftsDataGridView.TabIndex = 1;
-			// 
-			// dataGridViewTextBoxColumn1
-			// 
-			this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-			this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-			this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-			this.dataGridViewTextBoxColumn1.ReadOnly = true;
 			// 
 			// dataGridViewTextBoxColumn2
 			// 
@@ -259,12 +308,6 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 			this.dataGridViewTextBoxColumn4.HeaderText = "HouseNameShort";
 			this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
 			// 
-			// dataGridViewTextBoxColumn5
-			// 
-			this.dataGridViewTextBoxColumn5.DataPropertyName = "GiftId";
-			this.dataGridViewTextBoxColumn5.HeaderText = "GiftId";
-			this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-			// 
 			// dataGridViewTextBoxColumn6
 			// 
 			this.dataGridViewTextBoxColumn6.DataPropertyName = "GiftTextShort";
@@ -283,33 +326,124 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 			this.dataGridViewTextBoxColumn8.HeaderText = "DeliveryDate";
 			this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
 			// 
-			// label1
+			// giftsTableAdapter
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label1.Location = new System.Drawing.Point(12, 9);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(121, 16);
-			this.label1.TabIndex = 2;
-			this.label1.Text = "Список подарков";
-			this.label1.Click += new System.EventHandler(this.label1_Click);
+			this.giftsTableAdapter.ClearBeforeFill = true;
 			// 
-			// Form1
+			// tableAdapterManager
+			// 
+			this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+			this.tableAdapterManager.GiftsTableAdapter = this.giftsTableAdapter;
+			this.tableAdapterManager.HouseInformationTableAdapter = null;
+			this.tableAdapterManager.UpdateOrder = ITMO.CSCourse.Exam5.ReadSQLDBForm.DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+			// 
+			// firstNameTextBox
+			// 
+			this.firstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.giftsBindingSource, "FirstName", true));
+			this.firstNameTextBox.Location = new System.Drawing.Point(118, 269);
+			this.firstNameTextBox.Name = "firstNameTextBox";
+			this.firstNameTextBox.Size = new System.Drawing.Size(200, 20);
+			this.firstNameTextBox.TabIndex = 5;
+			// 
+			// lastNameTextBox
+			// 
+			this.lastNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.giftsBindingSource, "LastName", true));
+			this.lastNameTextBox.Location = new System.Drawing.Point(118, 295);
+			this.lastNameTextBox.Name = "lastNameTextBox";
+			this.lastNameTextBox.Size = new System.Drawing.Size(200, 20);
+			this.lastNameTextBox.TabIndex = 7;
+			// 
+			// houseNameShortTextBox
+			// 
+			this.houseNameShortTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.giftsBindingSource, "HouseNameShort", true));
+			this.houseNameShortTextBox.Location = new System.Drawing.Point(118, 321);
+			this.houseNameShortTextBox.Name = "houseNameShortTextBox";
+			this.houseNameShortTextBox.Size = new System.Drawing.Size(200, 20);
+			this.houseNameShortTextBox.TabIndex = 9;
+			// 
+			// giftTextShortTextBox
+			// 
+			this.giftTextShortTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.giftsBindingSource, "GiftTextShort", true));
+			this.giftTextShortTextBox.Location = new System.Drawing.Point(118, 347);
+			this.giftTextShortTextBox.Name = "giftTextShortTextBox";
+			this.giftTextShortTextBox.Size = new System.Drawing.Size(200, 20);
+			this.giftTextShortTextBox.TabIndex = 11;
+			// 
+			// giftURLTextBox
+			// 
+			this.giftURLTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.giftsBindingSource, "GiftURL", true));
+			this.giftURLTextBox.Location = new System.Drawing.Point(118, 373);
+			this.giftURLTextBox.Name = "giftURLTextBox";
+			this.giftURLTextBox.Size = new System.Drawing.Size(200, 20);
+			this.giftURLTextBox.TabIndex = 13;
+			// 
+			// deliveryDateDateTimePicker
+			// 
+			this.deliveryDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.giftsBindingSource, "DeliveryDate", true));
+			this.deliveryDateDateTimePicker.Location = new System.Drawing.Point(118, 399);
+			this.deliveryDateDateTimePicker.Name = "deliveryDateDateTimePicker";
+			this.deliveryDateDateTimePicker.Size = new System.Drawing.Size(200, 20);
+			this.deliveryDateDateTimePicker.TabIndex = 15;
+			// 
+			// buttonAddNewRecordToDB
+			// 
+			this.buttonAddNewRecordToDB.Location = new System.Drawing.Point(457, 272);
+			this.buttonAddNewRecordToDB.Name = "buttonAddNewRecordToDB";
+			this.buttonAddNewRecordToDB.Size = new System.Drawing.Size(169, 23);
+			this.buttonAddNewRecordToDB.TabIndex = 16;
+			this.buttonAddNewRecordToDB.Text = "Новая запись";
+			this.buttonAddNewRecordToDB.UseVisualStyleBackColor = true;
+			this.buttonAddNewRecordToDB.Click += new System.EventHandler(this.buttonAddNewRecordToDB_Click);
+			// 
+			// buttonSaveChangesToDB
+			// 
+			this.buttonSaveChangesToDB.Location = new System.Drawing.Point(457, 301);
+			this.buttonSaveChangesToDB.Name = "buttonSaveChangesToDB";
+			this.buttonSaveChangesToDB.Size = new System.Drawing.Size(169, 23);
+			this.buttonSaveChangesToDB.TabIndex = 17;
+			this.buttonSaveChangesToDB.Text = "Сохранить";
+			this.buttonSaveChangesToDB.UseVisualStyleBackColor = true;
+			this.buttonSaveChangesToDB.Click += new System.EventHandler(this.buttonSaveChangesToDB_Click);
+			// 
+			// buttonDeleteRecordFromDB
+			// 
+			this.buttonDeleteRecordFromDB.Location = new System.Drawing.Point(457, 331);
+			this.buttonDeleteRecordFromDB.Name = "buttonDeleteRecordFromDB";
+			this.buttonDeleteRecordFromDB.Size = new System.Drawing.Size(169, 23);
+			this.buttonDeleteRecordFromDB.TabIndex = 18;
+			this.buttonDeleteRecordFromDB.Text = "Удалить запись";
+			this.buttonDeleteRecordFromDB.UseVisualStyleBackColor = true;
+			// 
+			// Form2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(848, 450);
-			this.Controls.Add(this.label1);
+			this.ClientSize = new System.Drawing.Size(654, 494);
+			this.Controls.Add(this.buttonDeleteRecordFromDB);
+			this.Controls.Add(this.buttonSaveChangesToDB);
+			this.Controls.Add(this.buttonAddNewRecordToDB);
+			this.Controls.Add(firstNameLabel);
+			this.Controls.Add(this.firstNameTextBox);
+			this.Controls.Add(lastNameLabel);
+			this.Controls.Add(this.lastNameTextBox);
+			this.Controls.Add(houseNameShortLabel);
+			this.Controls.Add(this.houseNameShortTextBox);
+			this.Controls.Add(giftTextShortLabel);
+			this.Controls.Add(this.giftTextShortTextBox);
+			this.Controls.Add(giftURLLabel);
+			this.Controls.Add(this.giftURLTextBox);
+			this.Controls.Add(deliveryDateLabel);
+			this.Controls.Add(this.deliveryDateDateTimePicker);
 			this.Controls.Add(this.giftsDataGridView);
 			this.Controls.Add(this.giftsBindingNavigator);
-			this.Name = "Form1";
-			this.Text = "Form1";
-			this.Load += new System.EventHandler(this.Form1_Load);
-			((System.ComponentModel.ISupportInitialize)(this.windowsFormsDataSet)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.giftsBindingSource)).EndInit();
+			this.Name = "Form2";
+			this.Text = "Form2";
+			this.Load += new System.EventHandler(this.Form2_Load);
 			((System.ComponentModel.ISupportInitialize)(this.giftsBindingNavigator)).EndInit();
 			this.giftsBindingNavigator.ResumeLayout(false);
 			this.giftsBindingNavigator.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.giftsBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.giftsDataGridView)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -318,14 +452,12 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 
 		#endregion
 
-		private WindowsFormsDataSet windowsFormsDataSet;
+		private DataSet1 dataSet1;
 		private System.Windows.Forms.BindingSource giftsBindingSource;
-		private WindowsFormsDataSetTableAdapters.GiftsTableAdapter giftsTableAdapter;
-		private WindowsFormsDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+		private DataSet1TableAdapters.GiftsTableAdapter giftsTableAdapter;
+		private DataSet1TableAdapters.TableAdapterManager tableAdapterManager;
 		private System.Windows.Forms.BindingNavigator giftsBindingNavigator;
-		private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
 		private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-		private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
 		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
 		private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
 		private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
@@ -334,17 +466,24 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
 		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
 		private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-		private System.Windows.Forms.ToolStripButton giftsBindingNavigatorSaveItem;
 		private System.Windows.Forms.DataGridView giftsDataGridView;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+		private System.Windows.Forms.TextBox firstNameTextBox;
+		private System.Windows.Forms.TextBox lastNameTextBox;
+		private System.Windows.Forms.TextBox houseNameShortTextBox;
+		private System.Windows.Forms.TextBox giftTextShortTextBox;
+		private System.Windows.Forms.TextBox giftURLTextBox;
+		private System.Windows.Forms.DateTimePicker deliveryDateDateTimePicker;
+		private System.Windows.Forms.Button buttonAddNewRecordToDB;
+		private System.Windows.Forms.Button buttonSaveChangesToDB;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Button buttonDeleteRecordFromDB;
+		private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+		private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+		private System.Windows.Forms.ToolStripButton giftsBindingNavigatorSaveItem;
 	}
 }
-

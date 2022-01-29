@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITMO.CSCourse.SQL_App
+namespace SQL_App_Sample
 {
 	static class Program
 	{

@@ -36,5 +36,10 @@ namespace ITMO.CSCourse.Exam5.ReadSQLDBForm
 		{
 
 		}
+
+		private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
