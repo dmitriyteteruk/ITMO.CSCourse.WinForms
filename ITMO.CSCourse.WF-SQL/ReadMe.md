@@ -1,5 +1,6 @@
 ## Приложение Windows Forms для работы с БД
-Для запуска приложения по работе с БД необходимо предварительно выполнить следующие действия:
+Для запуска приложения по работе с БД на ПК должна быть устновлена MS SQL Server и SQL Server Management Studio. 
+Вам необходимо предварительно выполнить следующие действия:
 1. Скопировать код приложения.
 - Для этого скачайте [Zip-архив по ссылке](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmitriyteteruk%2FITMO.CSCourse.WinForms%2Ftree%2Fmaster%2FITMO.CSCourse.WF-SQL%2F). 
 - Разархивируйте его в любой папке на вашем ПК. 
