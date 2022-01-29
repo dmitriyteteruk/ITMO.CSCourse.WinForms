@@ -14,7 +14,7 @@ namespace ITMO.CSCourse.WF_SQL
     public partial class Form1 : Form
     {
         
-        SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=WindowsForms;Integrated Security=true;");
+        SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=Gifts;Integrated Security=true;");
         SqlCommand cmd;
         SqlDataAdapter adapt;
         //ID variable used in Updating and Deleting Record  
