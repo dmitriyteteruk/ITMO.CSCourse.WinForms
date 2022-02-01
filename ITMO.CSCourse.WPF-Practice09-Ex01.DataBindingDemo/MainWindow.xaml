@@ -28,6 +28,8 @@ Margin="0,0,5,0" />
     </Window.Resources>
 
     <Grid>
-        <ListBox ItemsSource="{Binding Mode=OneWay, Source={StaticResource studentCollection}}" ItemTemplate="{Binding Mode=OneWay, Source={StaticResource listBoxTemplate}}"/>
+        <ListBox HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="145" ItemsSource="{Binding Mode=OneWay, Source={StaticResource studentCollection}}" ItemTemplate="{Binding Mode=OneWay, Source={StaticResource listBoxTemplate}}"/>
+        <!-- <ListBox ItemsSource="{Binding Mode=OneWay, Source={StaticResource studentCollection}}" ItemTemplate="{Binding Mode=OneWay, Source={StaticResource listBoxTemplate}}"/> -->
+
     </Grid>
 </Window>

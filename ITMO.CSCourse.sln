@@ -67,6 +67,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.WF-SQL", "ITM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.WPF-Practice09-Ex01.DataBindingDemo", "ITMO.CSCourse.WPF-Practice09-Ex01.DataBindingDemo\ITMO.CSCourse.WPF-Practice09-Ex01.DataBindingDemo.csproj", "{DD9F22B1-0EE1-40C2-AEA8-D098D1AAC1A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse.WPF-Practice07-Ex01.WpfApplicationPolygon", "ITMO.CSCourse.WPF-Practice07-Ex01.WpfApplicationPolygon\ITMO.CSCourse.WPF-Practice07-Ex01.WpfApplicationPolygon.csproj", "{17E662A6-D7A7-4A85-97E1-B33F3309176C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +203,10 @@ Global
 		{DD9F22B1-0EE1-40C2-AEA8-D098D1AAC1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD9F22B1-0EE1-40C2-AEA8-D098D1AAC1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD9F22B1-0EE1-40C2-AEA8-D098D1AAC1A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17E662A6-D7A7-4A85-97E1-B33F3309176C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E662A6-D7A7-4A85-97E1-B33F3309176C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E662A6-D7A7-4A85-97E1-B33F3309176C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E662A6-D7A7-4A85-97E1-B33F3309176C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
